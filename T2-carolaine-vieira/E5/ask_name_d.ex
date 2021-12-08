@@ -5,7 +5,7 @@ defmodule AskName do
 
   @doc """
   Uma funcao que pergunta o nome do usuario e comprimenta.
-  Caso o usuario tenha o mesmo nome que eu(Carolaine), o comprimento sera diferente.
+  Caso o usuario tenha o mesmo nome que eu (Carolaine), o comprimento sera diferente.
 
   ## Parametros
 
@@ -17,6 +17,7 @@ defmodule AskName do
       "Ola, Marcos! Tudo bem com voce?"
 
   """
+  @spec ask():: String.t()
   def ask() do    
     name = IO.gets("Qual e o seu nome?\n")
     case String.trim(name) do 
