@@ -15,7 +15,7 @@ defmodule Todo do
 
     case command do
       "r"        -> show_todos(data)
-      "d"        -> delete_todos(data)
+      #"d"        -> delete_todos(data)
       "q"        -> "Goobye"
       _          -> get_command(data)
     end
